@@ -1,0 +1,561 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()local Window = Library.CreateLib("The strongest SKIBIDIEST HUB", "GrapeTheme")local Tab = Window:NewTab("Player")local Section = Tab:NewSection("Features")Section:NewButton("copy Discord  link to clipboard", "ButtonInfo", function()
+setclipboard("https://discord.com/invite/g57t9AB9")  wait(0.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "sucessful!"; -- the title 
+Text = "copied  discord to clipboard"; -- what the text says 
+Duration = 5; -- how long the notification should in secounds
+})end)Section:NewButton("KJ WALL combo (player)", "ButtonInfo", function()
+    -- Obtém o jogador local
+local player = game.Players.LocalPlayer
+
+-- Obtém o personagem do jogador
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Obtém o humanoide do personagem
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação que queremos monitorar
+local animationId = "16945550029"
+
+-- Cria um objeto de animação
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://" .. animationId
+
+-- Cria uma animação do humanoide
+local animator = Instance.new("Animator")
+animator.Name = "Animator"
+animator.Parent = humanoid
+
+-- Cria uma animação e adiciona ao Animator
+local animTrack = humanoid:LoadAnimation(animation)
+
+-- Função para detectar quando a animação é executada
+local function onAnimationPlayed(track)
+    if track.Animation.AnimationId == "rbxassetid://" .. animationId then
+        -- Adicione aqui a animação que você quer iniciar
+        print("A animação especificada está sendo executada!")
+
+        -- Exemplo: Reproduz uma animação personalizada
+        local newAnimation = Instance.new("Animation")
+        newAnimation.AnimationId = "rbxassetid://16945550029"
+        local newAnimTrack = humanoid:LoadAnimation(newAnimation)
+        newAnimTrack:Play()
+    end
+end
+
+-- Conecte a função ao evento de animação
+animator.AnimationPlayed:Connect(onAnimationPlayed)
+
+-- Configura o rastreamento de animação
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+-- LocalScript para Roblox
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação
+local animationId = "rbxassetid://18447913645"
+local animation = Instance.new("Animation")
+animation.AnimationId = animationId
+
+-- Criar um AnimationTrack para reproduzir a animação
+local animationTrack = humanoid:LoadAnimation(animation)
+
+-- Iniciar a animação automaticamente quando o script é executado
+animationTrack:Play()
+
+end)Section:NewButton("KJ WALL combo victim", "ButtonInfo", function()
+    -- LocalScript para Roblox
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação
+local animationId = "rbxassetid://18447915110"
+local animation = Instance.new("Animation")
+animation.AnimationId = animationId
+
+-- Criar um AnimationTrack para reproduzir a animação
+local animationTrack = humanoid:LoadAnimation(animation)
+
+-- Iniciar a animação automaticamente quando o script é executado
+animationTrack:Play()
+
+-- Obtém o jogador local
+local player = game.Players.LocalPlayer
+
+-- Obtém o personagem do jogador
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Obtém o humanoide do personagem
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação que queremos monitorar
+local animationId = "16945550029"
+
+-- Cria um objeto de animação
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://" .. animationId
+
+-- Cria uma animação do humanoide
+local animator = Instance.new("Animator")
+animator.Name = "Animator"
+animator.Parent = humanoid
+
+-- Cria uma animação e adiciona ao Animator
+local animTrack = humanoid:LoadAnimation(animation)
+
+-- Função para detectar quando a animação é executada
+local function onAnimationPlayed(track)
+    if track.Animation.AnimationId == "rbxassetid://" .. animationId then
+        -- Adicione aqui a animação que você quer iniciar
+        print("A animação especificada está sendo executada!")
+
+        -- Exemplo: Reproduz uma animação personalizada
+        local newAnimation = Instance.new("Animation")
+        newAnimation.AnimationId = "rbxassetid://16945550029"
+        local newAnimTrack = humanoid:LoadAnimation(newAnimation)
+        newAnimTrack:Play()
+    end
+end
+
+-- Conecte a função ao evento de animação
+animator.AnimationPlayed:Connect(onAnimationPlayed)
+
+-- Configura o rastreamento de animação
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+end)Section:NewButton("KJ WALL combo on dummy", "ButtonInfo", function()
+    -- Referências aos objetos
+local player = game.Workspace.Live["Weakest Dummy"]
+local playerHumanoid = player:FindFirstChildOfClass("Humanoid")
+
+-- IDs das animações
+local playerAnimationId = "k"  -- ID de animação do jogador (não utilizado no script fornecido)
+local dummyAnimationId = "18447915110"  -- ID de animação do Dummy
+
+-- Função para criar e adicionar animação
+local function addAnimation(humanoid, animationId)
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://" .. animationId
+    local animator = humanoid:FindFirstChildOfClass("Animator")
+    
+    if not animator then
+        animator = Instance.new("Animator")
+        animator.Name = "Animator"
+        animator.Parent = humanoid
+    end
+    
+    local animationTrack = animator:LoadAnimation(animation)
+    
+    -- Atrasar o início da animação em 0.8 segundos
+    wait(0.8)
+    animationTrack:Play()
+end
+
+-- Adiciona a animação ao Dummy
+addAnimation(playerHumanoid, dummyAnimationId)
+-- Obtém o jogador local
+local player = game.Players.LocalPlayer
+
+-- Obtém o personagem do jogador
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Obtém o humanoide do personagem
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação que queremos monitorar
+local animationId = "16945550029"
+
+-- Cria um objeto de animação
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://" .. animationId
+
+-- Cria uma animação do humanoide
+local animator = Instance.new("Animator")
+animator.Name = "Animator"
+animator.Parent = humanoid
+
+-- Cria uma animação e adiciona ao Animator
+local animTrack = humanoid:LoadAnimation(animation)
+
+-- Função para detectar quando a animação é executada
+local function onAnimationPlayed(track)
+    if track.Animation.AnimationId == "rbxassetid://" .. animationId then
+        -- Adicione aqui a animação que você quer iniciar
+        print("A animação especificada está sendo executada!")
+
+        -- Exemplo: Reproduz uma animação personalizada
+        local newAnimation = Instance.new("Animation")
+        newAnimation.AnimationId = "rbxassetid://16945550029"
+        local newAnimTrack = humanoid:LoadAnimation(newAnimation)
+        newAnimTrack:Play()
+    end
+end
+
+-- Conecte a função ao evento de animação
+animator.AnimationPlayed:Connect(onAnimationPlayed)
+
+-- Configura o rastreamento de animação
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+-- LocalScript para Roblox
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação
+local animationId = "rbxassetid://18447913645"
+local animation = Instance.new("Animation")
+animation.AnimationId = animationId
+
+-- Criar um AnimationTrack para reproduzir a animação
+local animationTrack = humanoid:LoadAnimation(animation)
+
+-- Iniciar a animação automaticamente quando o script é executado
+animationTrack:Play()
+
+end)Section:NewButton("Câmera Hub 2.0", "ButtonInfo", function()
+ loadstring(game:HttpGet("https://pastebin.com/raw/qPZxkSM8"))()
+
+end)Section:NewButton("You do Dropkick on dummy", "ButtonInfo", function()
+    -- Obtém o jogador local
+local player = game.Players.LocalPlayer
+
+-- Obtém o personagem do jogador
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Obtém o humanoide do personagem
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação que queremos monitorar
+local animationId = "16945550029"
+
+-- Cria um objeto de animação
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://" .. animationId
+
+-- Cria uma animação do humanoide
+local animator = Instance.new("Animator")
+animator.Name = "Animator"
+animator.Parent = humanoid
+
+-- Cria uma animação e adiciona ao Animator
+local animTrack = humanoid:LoadAnimation(animation)
+
+-- Função para detectar quando a animação é executada
+local function onAnimationPlayed(track)
+    if track.Animation.AnimationId == "rbxassetid://" .. animationId then
+        -- Adicione aqui a animação que você quer iniciar
+        print("A animação especificada está sendo executada!")
+
+        -- Exemplo: Reproduz uma animação personalizada
+        local newAnimation = Instance.new("Animation")
+        newAnimation.AnimationId = "rbxassetid://16945550029"
+        local newAnimTrack = humanoid:LoadAnimation(newAnimation)
+        newAnimTrack:Play()
+    end
+end
+
+-- Conecte a função ao evento de animação
+animator.AnimationPlayed:Connect(onAnimationPlayed)
+
+-- Configura o rastreamento de animação
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+-- Referências aos objetos
+local player = game.Workspace.Live["Weakest Dummy"]
+local playerHumanoid = player:FindFirstChildOfClass("Humanoid")
+
+-- IDs das animações
+local playerAnimationId = "k"  -- ID de animação do jogador (não utilizado no script fornecido)
+local dummyAnimationId = "17363256069"  -- ID de animação do Dummy
+
+-- Função para criar e adicionar animação
+local function addAnimation(humanoid, animationId)
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://" .. animationId
+    local animator = humanoid:FindFirstChildOfClass("Animator")
+    
+    if not animator then
+        animator = Instance.new("Animator")
+        animator.Name = "Animator"
+        animator.Parent = humanoid
+    end
+    
+    local animationTrack = animator:LoadAnimation(animation)
+    
+    -- Atrasar o início da animação em 0.8 segundos
+    wait(0.8)
+    animationTrack:Play()
+end
+
+-- Adiciona a animação ao Dummy
+addAnimation(playerHumanoid, dummyAnimationId)
+
+-- LocalScript para Roblox
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação
+local animationId = "rbxassetid://17420452843"
+local animation = Instance.new("Animation")
+animation.AnimationId = animationId
+
+-- Criar um AnimationTrack para reproduzir a animação
+local animationTrack = humanoid:LoadAnimation(animation)
+
+-- Iniciar a animação automaticamente quando o script é executado
+animationTrack:Play()
+
+
+end)Section:NewButton("Dummy dropkick you", "ButtonInfo", function()
+    -- LocalScript para Roblox
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+-- ID da animação
+local animationId = "rbxassetid://17363256069"
+local animation = Instance.new("Animation")
+animation.AnimationId = animationId
+
+-- Criar um AnimationTrack para reproduzir a animação
+local animationTrack = humanoid:LoadAnimation(animation)
+
+-- Iniciar a animação automaticamente quando o script é executado
+animationTrack:Play()
+
+-- Referências aos objetos
+local player = game.Workspace.Live["Weakest Dummy"]
+local playerHumanoid = player:FindFirstChildOfClass("Humanoid")
+
+-- IDs das animações
+local playerAnimationId = "k"  -- ID de animação do jogador (não utilizado no script fornecido)
+local dummyAnimationId = "17420452843"  -- ID de animação do Dummy
+
+-- Função para criar e adicionar animação
+local function addAnimation(humanoid, animationId)
+    local animation = Instance.new("Animation")
+    animation.AnimationId = "rbxassetid://" .. animationId
+    local animator = humanoid:FindFirstChildOfClass("Animator")
+    
+    if not animator then
+        animator = Instance.new("Animator")
+        animator.Name = "Animator"
+        animator.Parent = humanoid
+    end
+    
+    local animationTrack = animator:LoadAnimation(animation)
+    
+    -- Atrasar o início da animação em 0.8 segundo
+    animationTrack:Play()
+end
+
+-- Adiciona a animação ao Dummy
+addAnimation(playerHumanoid, dummyAnimationId)
+
+
+end)local Tab = Window:NewTab("Weakest Dummy")local WeakestDummySection = Tab:NewSection("Dummy Features")WeakestDummySection:NewButton("Dummy Ravage you (by my friend lefreshbaguette)", "ButtonInfo", function()
+    local player = game.Workspace.Live["Weakest Dummy"]
+repeat wait() until player:FindFirstChild("Humanoid")
+
+local dummyHumanoid = player:FindFirstChild("Humanoid")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://16945573694"
+
+local playAnim = dummyHumanoid:LoadAnimation(anim)
+
+playAnim:Play()
+
+wait(0.7)
+
+local player = game.Workspace.Live["Weakest Dummy"]
+repeat wait() until player:FindFirstChild("Humanoid")
+
+local dummyHumanoid = player:FindFirstChild("Humanoid")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://16945550029"
+
+local playAnim = dummyHumanoid:LoadAnimation(anim)
+
+playAnim:Play()
+
+-- ravage player anim
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local animationId = "16945557433"  -- change this id if u wanna replace anims
+
+
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://" .. animationId
+
+
+local animationTrack = humanoid:LoadAnimation(animation)
+animationTrack:Play()
+end)local Tab = Window:NewTab("Punch anims")local PunchSection = Tab:NewSection("M1's")PunchSection:NewButton("Suryui m1's", "ButtonInfo", function()
+    -- Function to handle animation detection and replacement
+local function handleAnimationDetection(animIdsToStop, replacementAnimId)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+
+    local function onAnimPlayed(animationTrack)
+        local animId = tonumber(string.match(animationTrack.Animation.AnimationId, "%d+"))
+
+        for _, stopId in ipairs(animIdsToStop) do
+            if animId == stopId then
+                animationTrack:Stop()
+                local replacementAnimation = Instance.new("Animation")
+                replacementAnimation.AnimationId = "rbxassetid://" .. replacementAnimId
+                humanoid:LoadAnimation(replacementAnimation):Play()
+                break
+            end
+        end
+    end
+
+    humanoid.AnimationPlayed:Connect(onAnimPlayed)
+end
+
+-- First set of animations
+local firstAnimIdsToStop = {10469493270, 13532562418, 13491635433, 13370310513}
+local firstReplacementAnimId = 17889458563 
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId)
+
+-- Second set of animations
+local secondAnimIdsToStop = {10469630950, 13532600125, 13296577783, 13390230973}
+local secondReplacementAnimId = 17889461810
+handleAnimationDetection(secondAnimIdsToStop, secondReplacementAnimId)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {10469639222, 13532604085, 13295919399, 13378751717}
+local thirdReplacementAnimId = 17889471098
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {10469643643, 13294471966, 13295936866, 13378708199}
+local fourthReplacementAnimId = 17889290569
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId)
+
+end)PunchSection:NewButton("KJ m1's (not working)", "ButtonInfo", function()
+    -- Obtém o jogador local
+local player = game.Players.LocalPlayer
+
+-- Obtém o personagem do jogador
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Obtém o humanoide do personagem
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID da animação que queremos monitorar
+local animationId = "16945550029"
+
+-- Cria um objeto de animação
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://" .. animationId
+
+-- Cria uma animação do humanoide
+local animator = Instance.new("Animator")
+animator.Name = "Animator"
+animator.Parent = humanoid
+
+-- Cria uma animação e adiciona ao Animator
+local animTrack = humanoid:LoadAnimation(animation)
+
+-- Função para detectar quando a animação é executada
+local function onAnimationPlayed(track)
+    if track.Animation.AnimationId == "rbxassetid://" .. animationId then
+        -- Adicione aqui a animação que você quer iniciar
+        print("A animação especificada está sendo executada!")
+
+        -- Exemplo: Reproduz uma animação personalizada
+        local newAnimation = Instance.new("Animation")
+        newAnimation.AnimationId = "rbxassetid://16945550029"
+        local newAnimTrack = humanoid:LoadAnimation(newAnimation)
+        newAnimTrack:Play()
+    end
+end
+
+-- Conecte a função ao evento de animação
+animator.AnimationPlayed:Connect(onAnimationPlayed)
+
+-- Configura o rastreamento de animação
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+-- Function to handle animation detection and replacement
+local function handleAnimationDetection(animIdsToStop, replacementAnimId)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+
+    local function onAnimPlayed(animationTrack)
+        local animId = tonumber(string.match(animationTrack.Animation.AnimationId, "%d+"))
+
+        for _, stopId in ipairs(animIdsToStop) do
+            if animId == stopId then
+                animationTrack:Stop()
+                local replacementAnimation = Instance.new("Animation")
+                replacementAnimation.AnimationId = "rbxassetid://" .. replacementAnimId
+                humanoid:LoadAnimation(replacementAnimation):Play()
+                break
+            end
+        end
+    end
+
+    humanoid.AnimationPlayed:Connect(onAnimPlayed)
+end
+
+-- First set of animations
+local firstAnimIdsToStop = {10469493270, 13532562418, 13491635433, 13370310513}
+local firstReplacementAnimId = 17325510002 
+handleAnimationDetection(firstAnimIdsToStop, firstReplacementAnimId)
+
+-- Second set of animations
+local secondAnimIdsToStop = {10469630950, 13532600125, 13296577783, 13390230973}
+local secondReplacementAnimId = 17325513870
+handleAnimationDetection(secondAnimIdsToStop, secondReplacementAnimId)
+
+-- Third set of animations
+local thirdAnimIdsToStop = {10469639222, 13532604085, 13295919399, 13378751717}
+local thirdReplacementAnimId = 17325522388
+handleAnimationDetection(thirdAnimIdsToStop, thirdReplacementAnimId)
+
+-- Fourth set of animations
+local fourthAnimIdsToStop = {10469643643, 13294471966, 13295936866, 13378708199}
+local fourthReplacementAnimId = 17325537719
+handleAnimationDetection(fourthAnimIdsToStop, fourthReplacementAnimId)
+
+end)WeakestDummySection:NewButton("Dummy does KJ ultimate", "ButtonInfo", function()
+    local player = game.Workspace.Live["Weakest Dummy"]
+repeat wait() until player.Humanoid
+local dummyhumanoid = game.Workspace.Live["Weakest Dummy"]["Humanoid"]
+
+local soundeffect = Instance.new("Sound")
+soundeffect.SoundId = "rbxassetid://17150550559"
+soundeffect.Parent = game.Workspace.Live["Weakest Dummy"]["Torso"]
+soundeffect:Play()
+soundeffect.Volume = 3
+
+local soundeffect = Instance.new("Sound")
+soundeffect.SoundId = "rbxassetid://17150550302"
+soundeffect.Parent = game.Workspace.Live["Weakest Dummy"]["Torso"]
+soundeffect:Play()
+soundeffect.Volume = 5
+
+local anim2 = Instance.new("Animation")
+anim2.AnimationId = "rbxassetid://17140902079"
+
+local playAnim2 = dummyhumanoid:LoadAnimation(anim2)
+playAnim2:Play()
+
+local fine = game.ReplicatedStorage.Resources.KJEffects["fine...1"].EnableBatch2:Clone()
+fine.Parent = game.Workspace.Live["Weakest Dummy"]["Torso"]
+    for _, child in ipairs(fine:GetChildren()) do
+        if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter
